@@ -1,0 +1,19 @@
+import pandas as pd 
+  
+# Read IND_data.csv into a DataFrame, assigned to df 
+df = pd.read_csv(r"C:\Users\shashwat dev\Desktop\\kaggle-dataset-10.csv") 
+
+
+# import the required module  
+import matplotlib.pyplot as plt 
+# plotting points as a scatter plot 
+x = df["comments"] 
+y = df["followers"] 
+plt.scatter(x, y, label= "stars", color= "m",  
+            marker= "*", s=30) 
+# x-axis label 
+plt.xlabel('comments') 
+# frequency label 
+plt.ylabel('followers') 
+# function to show the plot 
+plt.show()
